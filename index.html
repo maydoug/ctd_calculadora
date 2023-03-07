@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <h1>Calculadora Básica</h1>
+    <h3>Insira dois valores para calcular:</h3>
+    
+    <div class="Formulario"> 
+    <form>
+        <label name="valor01">
+        <input type="text" name="valor01" id="val01" required></input>
+        </label><br>
+        <label name="valor02">
+        <input type="text" name="valor02" id="val02" required></input>
+        </label>
+        <label name="operador">
+            <select name="operador" id="operador">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select>
+        </label><br>
+        <button type="submit" id="btn-form" onclick="calcular()">Calcular</button>      
+    </form>
+    </div>
+
+    <script src="./src/JS/calc.js"></script>
+</body>
+</html>
